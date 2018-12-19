@@ -50,6 +50,7 @@ Run follow commands
 
 ```
 php artisan migrate 
+php artisan serve
 ```
 
 ## Authors
