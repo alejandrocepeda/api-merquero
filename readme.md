@@ -22,8 +22,8 @@ However, if you are not using Homestead, you will need to make sure your server 
 ### Installing
 
 ```
-git clone  https://alejandrocepeda25@bitbucket.org/alejandrocepeda25/merqueo.git
-cd merqueo
+git clone  https://bitbucket.org/alejandrocepeda25/api-merquero.git
+cd api-merqueo
 ```
 
 Laravel utilizes Composer to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.
