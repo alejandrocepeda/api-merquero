@@ -1,5 +1,3 @@
-[![buddy pipeline](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128035/badge.svg?token=96c4dd2e008e7b88c8e38f3a854cbdec01a3fc655a6afe628a189ed4aa2df495 "buddy pipeline")](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128035)
-[![buddy pipeline](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128031/badge.svg?token=96c4dd2e008e7b88c8e38f3a854cbdec01a3fc655a6afe628a189ed4aa2df495 "buddy pipeline")](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128031)
 # LARAVEL API MERQUERO
 
 The APIs are HTTP-based RESTful APIs. API request and response bodies are formatted in JSON.
