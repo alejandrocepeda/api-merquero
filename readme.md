@@ -2,7 +2,7 @@
 [![buddy pipeline](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128031/badge.svg?token=96c4dd2e008e7b88c8e38f3a854cbdec01a3fc655a6afe628a189ed4aa2df495 "buddy pipeline")](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128031)
 # LARAVEL API MERQUERO
 
-The Softfusion APIs are HTTP-based RESTful APIs that use OAuth 2.0 for authorization. API request and response bodies are formatted in JSON.
+The APIs are HTTP-based RESTful APIs. API request and response bodies are formatted in JSON.
 
 ## Getting Started
 
@@ -15,22 +15,13 @@ The Laravel framework has a few system requirements. Of course, all of these req
 However, if you are not using Homestead, you will need to make sure your server meets the following requirements:
 
 ```
-* PHP >= 7.1.3
-* OpenSSL PHP Extension
-* PDO PHP Extension
-* Mbstring PHP Extension
-* Tokenizer PHP Extension
-* XML PHP Extension
-* Ctype PHP Extension
+* PHP >= 7.1.20
 * JSON PHP Extension
 * Composer
-* NPM/Node
 * Git
 ```
 
 ### Installing
-
-Log into Bitbucket Server
 
 ```
 git clone  https://alejandrocepeda25@bitbucket.org/alejandrocepeda25/merqueo.git
@@ -42,11 +33,6 @@ Laravel utilizes Composer to manage its dependencies. So, before using Laravel, 
 Command in your terminal:
 ```
 composer install
-```
-
-Run npm install
-```
-npm install
 ```
 
 Copy .env.example file to .env on root folder.
