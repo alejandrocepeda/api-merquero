@@ -1,69 +1,114 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+[![buddy pipeline](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128035/badge.svg?token=96c4dd2e008e7b88c8e38f3a854cbdec01a3fc655a6afe628a189ed4aa2df495 "buddy pipeline")](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128035)
+[![buddy pipeline](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128031/badge.svg?token=96c4dd2e008e7b88c8e38f3a854cbdec01a3fc655a6afe628a189ed4aa2df495 "buddy pipeline")](https://app.buddy.works/gokapital/api-softfusion/pipelines/pipeline/128031)
+# API SOFTFUSION
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+The Softfusion APIs are HTTP-based RESTful APIs that use OAuth 2.0 for authorization. API request and response bodies are formatted in JSON.
 
-## About Laravel
+## Getting Started
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Prerequisites
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+The Laravel framework has a few system requirements. Of course, all of these requirements are satisfied by the Laravel Homestead virtual machine, so it's highly recommended that you use Homestead as your local Laravel development environment.
 
-## Learning Laravel
+However, if you are not using Homestead, you will need to make sure your server meets the following requirements:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+```
+* PHP >= 7.1.3
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+* Tokenizer PHP Extension
+* XML PHP Extension
+* Ctype PHP Extension
+* JSON PHP Extension
+* Composer
+* NPM/Node
+* Git
+```
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+### Installing
 
-## Laravel Sponsors
+Log into Bitbucket Server
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+```
+git clone https://msuarez-gokapital@bitbucket.org/softfusion-gokapital/api-softfusion.git
+cd api-Softfusion
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
+Laravel utilizes Composer to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.
 
-## Contributing
+Command in your terminal:
+```
+composer install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Run npm install
+```
+npm install
+```
 
-## Security Vulnerabilities
+Copy .env.example file to .env on root folder.
+```
+copy .env.example .env (windows)
+cp .env.example .env (ubuntu)
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Open your .env file and change:
+```
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+```
 
-## License
+Run follow commands
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+php artisan key:generate
+php artisan migrate 
+php artisan db:seed
+php artisan passport:install
+php artisan storage:link
+```
+
+
+
+## Running the tests
+
+Run the automated tests for this system, API Softfusion use PHPunit for test every endpoint
+
+```
+./vendor/bin/phpunit
+```
+
+## API Endpoints
+
+For all endpoints documentation visit:
+
+* [Api documentation](https://Softfusion.docs.apiary.io)
+
+## Forge Laravel
+Para modificar la base de datos se debe agregar los siguientes comandos
+
+```
+php artisan migrate:refresh --force
+php artisan passport:install
+php artisan db:seed --force
+```
+
+## Built With
+
+* [Laravel](https://laravel.com/docs/5.6) - The artisan framework used version 5.6
+
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://bitbucket.org/msuarez-Softfusion/api-Softfusion/src#tags). 
+
+## Authors
+
+* **Mauricio Suarez Vega** - *msuarez@gokapital.com*
+* **Cristian Cespedes** - *ccespedes@gokapital.com* 
+* **Carlos Moreno** - *carlos@gokapital.com*
+* **Alejandro Cepeda** - *alejandro@gokapital.com*
