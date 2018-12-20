@@ -47,12 +47,14 @@ DB_PASSWORD=
 ```
 
 Run follow commands
+```
+Export database.sql file
+```
 
 ```
-php artisan migrate 
 php artisan serve
 ```
 
-## Authors
+## Author
 
 * **Alejandro Cepeda** - *alejandrocepeda25@gmail.com*
