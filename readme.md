@@ -48,9 +48,11 @@ DB_PASSWORD=
 
 Run follow commands
 ```
-Export database.sql file
+php artisan migrate
 ```
-
+```
+php artisan db:seed
+```
 ```
 php artisan serve
 ```
