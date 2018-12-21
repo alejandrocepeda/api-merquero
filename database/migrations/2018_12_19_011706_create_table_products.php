@@ -23,6 +23,7 @@ class CreateTableProducts extends Migration
             $table->integer('units')->default(0)->nullable();
             $table->integer('status_id')->default(1)->nullable();
             $table->boolean('group')->default(0);
+            $table->string('image');
             $table->timestamps();
         });
     }
