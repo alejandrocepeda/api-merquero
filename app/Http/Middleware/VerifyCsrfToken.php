@@ -20,5 +20,10 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+       'api/upload'
+    ];
+
+    protected $routes = [
+        
     ];
 }

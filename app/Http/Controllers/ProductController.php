@@ -19,6 +19,7 @@ class ProductController extends Controller
         //
 
         $products = Products::all();
+
         $products->load($this->relationships);
         return response()->json(['data' => $products]);
     }
@@ -43,6 +44,7 @@ class ProductController extends Controller
     {
         //
     }
+
 
     /**
      * Display the specified resource.

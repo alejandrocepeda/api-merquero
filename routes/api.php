@@ -17,5 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('commands/{id}','FileController@executeCommands');
+Route::post('upload','FileController@upload');
 
 Route::resource('products','ProductController');
+Route::resource('files','FileController');
