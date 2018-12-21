@@ -19,10 +19,10 @@ However, if you are not using Homestead, you will need to make sure your server 
 * Git
 ```
 
-### Installing
+### Installing BackEnd api-merquero
 
 ```
-git clone  https://bitbucket.org/alejandrocepeda25/api-merquero.git
+git clone https://alejandrocepeda25@bitbucket.org/alejandrocepeda25/api-merquero.git
 cd api-merqueo
 ```
 
@@ -55,6 +55,14 @@ php artisan db:seed
 ```
 ```
 php artisan serve
+```
+
+### Installing FrontEnd vue-merquero
+
+```
+git clone https://alejandrocepeda25@bitbucket.org/alejandrocepeda25/vue-merquero.git
+cd vue-merqueo
+open index.html
 ```
 
 ## Author
